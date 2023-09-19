@@ -1,0 +1,17 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Example application for using dependencies between containers with \"healthcheck (Docker)\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Docker",
+    "TypeScript",
+    "Containers",
+    "MySQL"
+  ],
+  "author": "Lucian Tavares",
+  "license": "ISC"
+}
