@@ -8,8 +8,8 @@ services:
     container_name: app
     volumes:
       - ./app:/usr/src/app
-    # entrypoint: sh -c "npm install && npm run start"
-    entrypoint: sh -c "tail -f /dev/null"
+    entrypoint: sh -c "npm install && npm run dev"
+#    entrypoint: sh -c "tail -f /dev/null"
     ports:
       - 3000:3000
     depends_on:
@@ -22,7 +22,7 @@ services:
     container_name: database
     volumes:
       - mysql:/var/lib/mysql
-      # - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
     environment:
       - MYSQL_DATABASE=nodedb
       - MYSQL_ROOT_PASSWORD=root
